@@ -1,5 +1,15 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* .topnav{
 
+  position: fixed;
+  z-index: 1000;
+} */
 #nav1{
+  background-color: #e80071;
   width: 98%;
   display: flex;
   align-items: center;
@@ -7,6 +17,7 @@
  margin: auto;
   padding: 10px 10px 10px 10px;
   background-image: url("./Shipra\ \(3\).png");
+ 
   
 }
 .nevright{
@@ -69,6 +80,10 @@ span:hover{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 0px;
+   /* position: relative; */
+ background-color: aliceblue; 
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .nav2>li>img{
     width: 150px
@@ -150,3 +165,129 @@ margin-right: 10px;
    
     border-top-left-radius: 10px
   }
+  .onlyshipra>div{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+
+  }
+  .onlyshipra{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .onlyshipra>div>div{
+    box-shadow: rgba(185, 10, 185, 0.05) 0px 6px 24px 0px, rgba(224, 85, 213, 0.623) 0px 0px 0px 1px;
+    border-radius: 15px;
+    
+
+  }
+  .onlyshipra img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color:rgb(92,104,156);
+  }
+  .onlyshipra>div>div>h4{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+  }
+  .onlyshipra>div>div>p{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color:rgb(92,104,156);
+  }
+  .manu-bar{
+    text-align: center;
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 98%;
+    margin: auto;
+    margin-top: -9px;
+   
+  }
+  .manu-bar>ul{
+    width: 100%;
+    display: inline-flex;
+    list-style: none;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding-top: 10px;
+   position: relative;
+    
+  }
+  .submanu1 ul{
+    float: left;
+    text-justify: auto;
+    text-align-last: left;
+    list-style: none;
+   
+    /* width: 110px; */
+    /* margin: auto; */
+    /* margin-top: 10px; */
+    
+   
+  }
+  .manu-bar ul li a{
+text-decoration: none;
+color:rgb(92,104,156);
+font-family: Inter, sans-serif;
+   font-weight: 400;
+   font-style: normal;
+
+   
+  }
+  .active,.manu-bar ul li a:hover{
+   
+    color: #e80071;
+  }
+.submanu1>div{
+  margin-left: 20px;
+/* margin-left: 50px; */
+padding-right: 0;
+
+width:auto;
+  
+
+}
+.submanu1{
+ display: none;
+}
+.submanu1>div>ul{
+  display: block;
+  
+}
+
+.submanu1 a{
+  text-justify: auto;
+}
+.manu-bar ul li:hover .submanu1{
+  /* display: block; */
+  position: absolute;
+  background-color: aliceblue;
+  margin-top: 5px;
+  display: flex;
+ list-style: none;
+ 
+
+
+
+}
+.manu-bar ul li:hover .submanu1 ul{
+  display: block;
+  
+}
+header{
+ 
+  position: sticky;
+  top: 0;
+
+  background-color: aliceblue;
+  z-index: 1000;
+}

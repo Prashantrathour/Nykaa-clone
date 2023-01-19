@@ -114,6 +114,7 @@
        }
         array.push(object)
         alert("Account Created")
+        window.location.href="./index.html"
      localStorage.setItem("registerdata",JSON.stringify(array))
       
     })
@@ -142,6 +143,8 @@
        }
        logindata.push(object2)
        alert("Login succsessfully")
+       
+       window.location.href="./index.html"
        localStorage.setItem("login",JSON.stringify(array))
         })
         form.append(input1,input2,input3)
