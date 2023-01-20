@@ -352,7 +352,7 @@ search.addEventListener("submit",(e)=>{
   e.preventDefault();
 valuesearch=search.search.value;
 let filtered=data1.filter((el)=>{
-  if( el.country.toUpperCase().includes(value.toUpperCase()) ===true){
+  if(( el.brand.toUpperCase().includes(valuesearch.toUpperCase()) ===true)||(( el.prodname.toUpperCase().includes(valuesearch.toUpperCase()) ===true))){
      return true 
   }else{
       return false
@@ -361,6 +361,8 @@ let filtered=data1.filter((el)=>{
       
 })
 display(filtered)
+total=document.querySelector(".count")
+total.innerText=filtered.length
 console.log(valuesearch)
 })
 
@@ -371,7 +373,7 @@ function display(data) {
 
 
     container.innerHTML="";
-    data.forEach((el,i) => {
+    data.forEach((el) => {
     
         let card=document.createElement("div")
         let imge=document.createElement("img")
@@ -407,10 +409,11 @@ function display(data) {
             alert("product Already Added")
           }else{
             let element=data.splice(el,1)
-            dataarray.push(element[0])
+            dataarray.push({...el,quatity:1})
            localStorage.setItem("addtocart",JSON.stringify(dataarray))
            
            alert("product Added")
+           window.location.href="./cart.html"
           }
    
            
@@ -419,13 +422,7 @@ function display(data) {
 card.append(imge,h2,h4,h3a,h3,p,rat,rat2,rat3,rat4,button)
 container.append(card)
 
-
-    });
-    
-   
-   
-    
-    
+    });  
 }
 console.log(dataarray)
 display(data1)
@@ -459,52 +456,6 @@ function check(el){
   }, 1000);
 
   
-  var popular_brand_names = [
-    {
-      img_url:
-        "https://adn-static2.nykaa.com/media/wysiwyg/2018/Brandslogo/FacesCanadaa.png",
-    },
-    {
-      img_url:
-        "https://adn-static2.nykaa.com/media/wysiwyg/HeaderIcons/The-Face-Shop.png",
-    },
-    {
-      img_url:
-        "https://adn-static2.nykaa.com/media/wysiwyg/2018/colorbar-logoforui.png",
-    },
-    {
-      img_url:
-        "https://adn-static2.nykaa.com/media/wysiwyg/2018/Brandslogo/nyx_New.png",
-    },
-    {
-      img_url:
-        "https://adn-static2.nykaa.com/media/wysiwyg/2018/Brandslogo/LOTUS-HERBALS.png",
-    },
-    { img_url: "https://adn-static2.nykaa.com/media/wysiwyg/2019/niveaa.png" },
-    {
-      img_url:
-        "https://adn-static2.nykaa.com/media/wysiwyg/cms/beauty/menu/clinique.png",
-    },
-    {
-      img_url: "https://adn-static2.nykaa.com/media/wysiwyg/2018/neutrogena.png",
-    },
-    {
-      img_url:
-        "https://adn-static2.nykaa.com/media/wysiwyg/2020/BrandslogoMenubar/Estee-Lauder.png",
-    },
-    {
-      img_url:
-        "https://adn-static2.nykaa.com/media/wysiwyg/cms/beauty/menu/mac.png",
-    },
-    {
-      img_url:
-        "https://adn-static2.nykaa.com/media/wysiwyg/2019/Maybelline1211.png",
-    },
-    {
-      img_url:
-        "https://adn-static2.nykaa.com/media/wysiwyg/lakme_mega_menu_header.png",
-    },
-  ];
 
    
 

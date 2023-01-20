@@ -206,11 +206,14 @@
   }
   #cont{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     width: 98%;
     margin: auto;
     gap: 10px;
     justify-content: space-around;
+  
+    padding: 10px 10px 10px 10px;
+
 
 
 }
