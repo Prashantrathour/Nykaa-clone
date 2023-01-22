@@ -87,6 +87,8 @@
         <input type="text" placeholder="Enter your name" id="name">
         <input type="number" placeholder="Enter your Mobile number" id="mobile">
         <input type="email" placeholder ="Enter your Email" id="email">
+        <input type="text" placeholder ="Enter your Address" id="add">
+        <input type="number" placeholder ="Enter your Area Pincode" id="Pincode">
         <input type="password"  placeholder="Enter Password" id="password">
         <input style="color: rgb(236, 17, 145); width: 310px;" type="submit" value="Create Account">
     </form>
@@ -111,6 +113,8 @@
         name:formdata.name.value,
         mobile:formdata.mobile.value,
         email:formdata.email.value,
+        address:formdata.add.value,
+        Pincode:formdata.Pincode.value,
         password:formdata.password.value,
        }
        if(checkdata(object)){
