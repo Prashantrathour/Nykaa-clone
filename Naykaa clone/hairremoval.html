@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Remover</title>
+    <link rel="stylesheet" href="./cssprimier.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://css.gg/shopping-bag.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  /* .topnav{
+  
+    position: fixed;
+    z-index: 1000;
+  } */
+  #nav1{
+    background-color: #94094c;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   margin-top: 0px;
+   margin: auto;
+    padding: 10px 10px 10px 10px;
+    background-image: url("./Shipra\ \(3\).png");
+   
+    
+  }
+  .nevright{
+    display: flex;
+   
+    width: 100%;
+    justify-content: center;
+    justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  }
+  .nevright>img{
+    width: 5%;
+  
+  }
+  .navleft{
+   width: 100%;
+     text-decoration: none;
+    color: rgb(250, 250, 250);
+   
+    animation-name: bounce;
+    margin-left: 10px;
+  margin-right: 10px;
+  
+  
+  }
+  .navright span{
+      font-weight: 600;
+  }
+  span:hover{
+      color: white;
+  }
+  .navleft>a{
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+  }
+  
+  .navleft>a:hover{
+    color: white;
+  }
+  
+  @media only screen and (min-width: 300px) and (max-width: 480px){
+  .navleft{
+    display: none;
+  }
+  
+  }
+ 
+  .nav2{
+      display: flex;
+     font-family: Inter, Roboto, Arial, sans-serif;
+     font-weight: 400;
+     size: 14px;
+     line-height: 14px;
+     font-style: normal;
+      justify-content: space-evenly;
+      align-items: center;
+   
+     /* position: relative; */
+   background-color: rgb(255, 255, 255); 
+      list-style: none;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+  }
+  .nav2>li>img{
+      width: 150px
+      
+  
+  }
+ 
+     .nav2 button{
+      background-color: rgb(252,39,121);
+      border: none;
+      padding: 5px 10px 5px 10px ;
+      border-radius: 6px;
+     }
+  button a{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+  }
+  img{
+      
+      margin: auto;
+  }
+    .banner2>div{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+      
+    }
+    .manu-bar{
+      text-align: center;
+     
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      width: 100%;
+      margin: auto;
+    
+  
+
+  padding: 10px 15px 10px 15px;
+     
+    }
+    .manu-bar>ul{
+      width: 100%;
+      display: inline-flex;
+      list-style: none;
+      justify-items: center;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0px;
+      padding-top: 10px;
+     position: relative;
+      
+    }
+    .submanu1 ul{
+      float: left;
+      text-justify: auto;
+      text-align-last: left;
+      list-style: none;
+     
+ 
+      
+     
+    }
+    .manu-bar ul li a{
+  text-decoration: none;
+  color:rgb(92,104,156);
+  font-family: Inter, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+  
+     
+    }
+    .active,.manu-bar ul li a:hover{
+     
+      color: #e80071;
+    }
+  .submanu1>div{
+    margin-left: 20px;
+  /* margin-left: 50px; */
+  padding-right: 0;
+  
+  width:auto;
+    
+  
+  }
+  .submanu1{
+   display: none;
+  }
+  .submanu1>div>ul{
+    display: block;
+    
+  }
+  
+  .submanu1 a{
+    text-justify: auto;
+  }
+  .manu-bar ul li:hover .submanu1{
+    /* display: block; */
+    position: absolute;
+    background-color: aliceblue;
+    margin-top: 5px;
+    display: flex;
+   list-style: none;
+   
+  
+  
+  
+  }
+  .manu-bar ul li:hover .submanu1 ul{
+    display: block;
+    
+  }
+  header{
+ 
+    position: sticky;
+    top: 0;
+   
+    background-color: aliceblue;
+    z-index: 1000;
+  }
+  #cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 98%;
+    margin: auto;
+    gap: 10px;
+    justify-content: space-around;
+
+
+}
+#cont>div{
+/* padding-left: 30px; */
+    width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: auto;
+   
+    
+}
+#cont img{
+    width: 100%;
+    
+}
+#facebanner{
+   width: 95%;
+   margin: auto;
+  
+  
+}
+#facebanner>img{
+ 
+    width: 100%;
+}
+.face{
+  
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Inter, Roboto, Arial, sans-serif;
+    line-height: 28px;
+    position: relative;
+}
+#card{
+    margin: auto;
+    display: flex;
+ 
+}
+.leftside{
+    width: 60%;
+  
+    position: sticky;
+    top: 100px;
+    height: 500px;
+ 
+  
+}
+.sort{
+   
+  
+    width: 300px;;
+
+    margin-left:100px;
+    margin-right: 50px;
+}
+#sort{
+  font-size: medium;
+}
+.sort li{
+    box-shadow: rgba(91, 97, 102, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 6px;
+    list-style: none;
+    font-family: Inter, Roboto, Arial, sans-serif;
+    padding-top: 10px;
+}
+select{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  
+    font-weight: 600;
+    font-size: 300px;
+    height: 60px;
+    margin-top: 5px;
+width: 100%;
+    list-style: none; 
+    font-family: Inter, Roboto, Arial, sans-serif;
+    border-color: white;
+ 
+}
+.cutt{
+    text-decoration:line-through;
+    color: grey;
+}
+.checked{
+    color: orange;
+ 
+ display: block;
+    left: 50%;
+   
+
+  }
+  #cont>div button{
+
+    display: block;
+    margin: auto;
+   width: 80%;
+   padding-top: 10px;
+   padding-bottom: 10px;
+background-color: aquamarine;
+   border: 0;
+   color: aliceblue;
+   font-weight: 600;
+   font-style: normal;
+   font-family: Inter, Roboto, Arial, sans-serif;
+   
+  }
+  #cont>div button:hover{
+    display: block;
+    margin: auto;
+   width: 90%;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background-color: #e80071;
+   border: 0;
+   color: aliceblue;
+   font-weight: 600;
+   font-style: normal;
+   font-family: Inter, Roboto, Arial, sans-serif;
+}
+#flex{
+   
+    display: flex;
+    justify-content: center;
+}
+    </style>
+</head>
+<body> <header>
+    <div class="topnav">
+        <nav id="nav1">
+            <div class="navleft">
+                <a  href="">BEAUTY BONANZA Get Your Daily Dose Of Amazing Deals</a>
+            </div>
+            <div class="nevright">
+                <img src="./application.png" alt=""><span>Get App </span><span class="x">|</span>
+                <img src="./location.png" alt="location"><span>Store & Event</span><span class="x">|</span>
+                <img src="./gift-box.png" alt=""><span>Gift</span><span class="x">   |   </span>
+                <img src="./question.png" alt=""><span>Help</span><span class="x"></span>
+    
+            </div>
+        </nav>
+        <nav>
+       
+          <div>
+            <ul class="nav2">
+            <li id="home"><img src="./Shipra (2)smalll.png" ></a></li>
+            <li>Categories</li>
+            <li>Brands</li>
+            <li>Luxe</li>
+            <li>Shipra Fashion</li>
+            <li>Beauty</li>
+            <li><form action="">
+              <input type="search" name="search" id="search" placeholder="Search">
+              <input type="submit" value="Search">
+            </form></li>
+            <button ><a href="./sign.html">SignUp</a> </button>
+            <a href="./cart.html"><i class="gg-shopping-bag"></i></a>
+            
+          </ul></div>
+          
+        </nav>
+      </div>
+    </header>
+        <!-- //////////////////////////////////////////////////////////// -->
+        <div class="manu-bar">
+          <ul>
+            <li class="active"><a href="./faceprimier.html">MakeUp</a>
+              <div class="submanu1">
+                <div >
+                  <ul>
+                    <li><a href="./faceprimier.html">Face</a></li>
+                    <li><a href="./faceprimier.html">Face Primer</a></li>
+                    <li><a href="./faceprimier.html">Concealer</a></li>
+                    <li><a href="./faceprimier.html">Foundation</a></li>
+                    <li><a href="./faceprimier.html">Compact</a></li>
+                    <li><a href="./faceprimier.html">Contour</a></li>
+                    <li><a href="./faceprimier.html">Loose Powder</a></li>
+                    <li><a href="./faceprimier.html">Tinted</a></li>
+                    <li><a href="./faceprimier.html">Moisturizer</a></li>
+                    <li><a href="./faceprimier.html">Blush</a></li>
+                    <li><a href="./faceprimier.html">Bronzer</a></li>
+                    <li><a href="./faceprimier.html">BB & CC Cream</a></li>
+                    <li><a href="./faceprimier.html">Highliters</a></li>
+                    <li><a href="./faceprimier.html">Setting Spray</a></li>
+                    <li><a href="./faceprimier.html">Makeup Remover</a></li>
+                    <li><a href="./faceprimier.html">Sindoor</a></li>
+                  </ul>
+                </div> 
+                <div >
+                  <ul>
+                    <li><a href="./faceprimier.html">Eyes</a></li>
+                    <li><a href="#">Kajal</a></li>
+                    <li><a href="#">EyeLiner</a></li>
+                    <li><a href="#">Mascara</a></li>
+                    <li><a href="#">Eye Shadow</a></li>
+                    <li><a href="#">Eye Brow</a></li>
+                    <li><a href="#">Enhancers</a></li>
+                    <li><a href="#">Eye Primer</a></li>
+                    <li><a href="#">False Eyelashes</a></li>
+                    <li><a href="#">Eye MakeUp</a></li>
+                    <li><a href="#">Remover</a></li>
+                    <li><a href="#">Under Eyes</a></li>
+                    <li><a href="#">Concealer</a></li>
+                    <li><a href="#">ContectLenses</a></li>
+                    <li><a href="#">Makeup Kit & Combos</a></li>
+                    <li><a href="#">MakeUpKits</a></li>
+                    <li><a href="#">Combos</a></li>
+                  </ul>
+                </div> 
+                <div >
+                  <ul>
+                    <li><a href="#">Lips</a></li>
+                    <li><a href="#"> Lipstick</a></li>
+                    <li><a href="#">Liquid Lipstick</a></li>
+                    <li><a href="#">Lip Crayon</a></li>
+                    <li><a href="#"> Lip Gloss</a></li>
+                    <li><a href="#">   Lip Liner</a></li>
+                    <li><a href="#">  Lip Plumper</a></li>
+                    <li><a href="#"> Lip Stain</a></li>
+                    <li><a href="#"> Nails</a></li>
+                    <li><a href="#"> Nail Polish</a></li>
+                    <li><a href="#">Nail Art Kits</a></li>
+                    <li><a href="#"> Nail Care</a></li>
+                    <li><a href="#">Setting Spray</a></li>
+                    <li><a href="#">Makeup Remover</a></li>
+               
+                    <li><a href="#">Sindoor</a></li>
+                  </ul>
+                </div> 
+                <div >
+                  <ul>
+                    <li><a href="#">Tools & Brushes</a></li>
+                    <li><a href="#">Face Brush</a></li>
+                    <li><a href="#">Eye Brush</a></li>
+                    <li><a href="#">Lip Brush</a></li>
+                    <li><a href="#">Brush Sets</a></li>
+                    <li><a href="#">Brush Cleaners</a></li>
+                    <li><a href="#">Sponges & Applicators</a></li>
+                    <li><a href="#">Eyelash Curlers</a></li>
+                    <li><a href="#">Tweezers</a></li>
+                    <li><a href="#">Sharpeners</a></li>
+                    <li><a href="#">Mirrors</a></li>
+                    <li><a href="#">Makeup Pouches</a></li>
+                    <li><a href="#">Multi-Functional Makeup Palettes</a></li>
+                  </ul>
+                </div> 
+                <div >
+                  <ul>
+                    <li><a href="#">Top Brands</a></li>
+                    <li><a href="#">Kay Beauty</a></li>
+                    <li><a href="#">Huda Beauty</a></li>
+                    <li><a href="#">Charlotte Tilbury</a></li>
+                    <li><a href="#">M.A.C</a></li>
+                    <li><a href="#">Maybelline New York</a></li>
+                    <li><a href="#">L'Oreal Paris</a></li>
+                    <li><a href="#">Lakme</a></li>
+                    <li><a href="#">Shipra Cosmetics</a></li>
+                    <li><a href="#">Nyx Pro.Makeup</a></li>
+                  </ul>
+                </div> 
+                </div> </li>
+            <li><a href="./hairremoval.html">Skin Hair</a></li>
+            <li><a href="">Appliance</a></li>
+            <li><a href="">Bath&Body</a></li>
+            <li><a href="">Natural</a></li>
+            <li><a href="">Mom&Baby</a></li>
+            <li><a href="">Health&Wellness</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Fregarance</a></li>
+            <li><a href="">Pop.Ups</a></li>
+            <li><a href="">Sale</a></li>
+          </ul>
+        </div>
+            <div class="face">
+            <h1>Hair Removal Collection (<span class="count">0</span> ) </h1>
+            </div>  
+        <div id="facebanner">
+            <!-- /////banner -->
+        </div>
+        <div class="face">
+            <h1>All Products</h1>
+        </div>
+   <div id="card"> 
+    
+    <div class="leftside">
+        <div class="sort"> 
+            <UL>
+                <select id="sort">
+                    <option value="1">Sort By Price And Name</option>
+                    <option value="pricelowtohigh">Price: Low To High</option>
+                    <option value="pricehightolow">Price: High To Low</option>
+                    <option value="name">Name</option>
+                </select>
+                <li>Avg Cutomer Rating</li>
+                <li>Preferance</li>
+                <li>Concern</li>
+                <li>Skin Type</li>
+                <li>Formation</li>
+                <li>Gender</li>
+                <li>Color</li>
+                <li>Finish</li>
+                <li>Skin Tone</li>
+                <li>Concieons</li>
+        </UL>
+    </div>
+       
+    </div>
+    
+    <div id="cont">
+
+        <!-- append here -->
+    </div>
+    </div>
+   
+</body>
+<script >
+    
+let home=document.getElementById("home")
+home.addEventListener("click",(e)=>{
+      e.preventDefault()
+      window.location.href="./index.html"
+})
+
+data1=JSON.parse(localStorage.getItem("data2"))
+
+let sort=document.getElementById("sort");
+let parent=document.getElementById("cont")
+function sortproduct(data){
+  sort.addEventListener("change",((e)=>{
+    
+    
+    e.preventDefault()
+    if(sort.value=="1"){
+      display(data1)
+     
+    
+      
+
+    }else if(sort.value=="pricelowtohigh"){
+      filtered=data.sort((a,b)=>{
+        return a.price-b.price
+      })
+      display(filtered)
+      
+    }
+    else if(sort.value=="pricehightolow"){
+      filtered=data.sort((a,b)=>{
+        return b.price-a.price
+      })
+      display(filtered)
+      
+    }else if(sort.value=="name"){
+      filtered=data.sort((a,b)=>{if(a.brand >b.brand) return 1 })
+      filtered=data.sort((a,b)=>{if(a.brand <b.brand) return -1 })
+      display(filtered)
+    }
+  }))
+}
+sortproduct(data1)
+let dataarray=JSON.parse(localStorage.getItem("addtocart2"))||[]
+  ////
+  console.log(dataarray)
+let container=document.getElementById("cont")
+
+
+//////
+let search=document.querySelector("form")
+
+search.addEventListener("submit",(e)=>{
+  e.preventDefault();
+valuesearch=search.search.value;
+let filtered=data1.filter((el)=>{
+  if(( el.brand.toUpperCase().includes(valuesearch.toUpperCase()) ===true)||(( el.card_title
+.toUpperCase().includes(valuesearch.toUpperCase()) ===true))){
+     return true 
+  }else{
+      return false
+  }
+ 
+      
+})
+display(filtered)
+total=document.querySelector(".count")
+total.innerText=filtered.length
+console.log(valuesearch)
+})
+
+function display(data) {
+  
+///////check
+
+
+
+    container.innerHTML="";
+    data.forEach((el) => {
+    
+        let card=document.createElement("div")
+        let imge=document.createElement("img")
+        imge.setAttribute("src",el.image2)
+        let h2=document.createElement("h6")
+        h2.innerText=el.card_title
+        let h4=document.createElement("h6");
+        h4.innerText=el.brand
+        let h5=document.createElement("h6");
+        h4.innerText=el.category;
+        
+        let h3=document.createElement("h6");
+        h3.innerText="₹"+el.off_price
+        let h3a=document.createElement("h6");
+        h3a.innerText="MRP"+"₹"+el.price
+        h3a.setAttribute("class","cutt")
+        let p=document.createElement("h6");
+        p.innerText="Rating:-"+el.rating
+        let p1=document.createElement("h6");
+        p1.innerText="Rating:-"+el.how_to_use
+
+
+        // let br=document.createElement("br")
+        // br.innerText=""
+        card2=document.createElement("div")
+        card2.setAttribute("id","flex")
+        let rat=document.createElement("p")
+        rat.setAttribute("class","fa fa-star fa-1x checked")
+        let rat2=document.createElement("p")
+        rat2.setAttribute("class","fa fa-star fa-1x checked")
+        let rat3=document.createElement("p")
+        rat3.setAttribute("class","fa fa-star fa-1x checked")
+        let rat4=document.createElement("p")
+        rat4.setAttribute("class","fa fa-star fa-1x")
+        let button=document.createElement("button");
+        button.innerText="Add to Card"
+        button.addEventListener("click",(product)=>{
+          if(check(el)){
+            alert("product Already Added")
+          }else{
+            let element=data.splice(el,1)
+            dataarray.push({...el,quatity:1})
+           localStorage.setItem("addtocart2",JSON.stringify(dataarray))
+           
+           alert("product Added")
+           window.location.href="./cart2.html"
+          }
+   
+           
+        })
+        card2.append(rat,rat2,rat3,rat4)
+       
+card.append(imge,h2,h4,h5,h3a,h3,p,card2,button)
+container.append(card)
+
+    });  
+}
+console.log(dataarray)
+display(data1)
+function check(el){
+  for(let i=0;i<dataarray.length;i++){
+   
+   
+    if(dataarray[i].price==el.price){
+     
+      return true
+    }
+    return false
+  }
+}
+
+ 
+
+  imageslide=["https://images-static.nykaa.com/uploads/fe975d47-3792-4599-978f-ee185ef9f114.jpg?tr=w-1200,cm-pad_resize","https://images-static.nykaa.com/uploads/fe975d47-3792-4599-978f-ee185ef9f114.jpg?tr=w-1200,cm-pad_resize","https://images-static.nykaa.com/uploads/67dc1a42-52d5-4f03-b7eb-ce1e35bf6594.jpg?tr=w-1200,cm-pad_resize","https://images-static.nykaa.com/uploads/93c65307-10fd-489a-9fe3-2cf86df3f037.jpg?tr=w-1200,cm-pad_resize","https://images-static.nykaa.com/uploads/93c65307-10fd-489a-9fe3-2cf86df3f037.jpg?tr=w-1200,cm-pad_resize","https://images-static.nykaa.com/uploads/381bc88c-1637-49da-9004-eda6690cf3f1.jpg?tr=w-1200,cm-pad_resize","https://images-static.nykaa.com/uploads/fe975d47-3792-4599-978f-ee185ef9f114.jpg?tr=w-1200,cm-pad_resize",]
+  let count=0;
+  let facebanner=document.getElementById("facebanner");
+  img=document.createElement("img")
+  facebanner.append(img)
+  total=document.querySelector(".count")
+  total.innerText=data1.length
+  setInterval(() => {
+    if(count==imageslide.length){
+      count=0
+    }
+    img.setAttribute("src",imageslide[count])
+    count++;
+  }, 1000);
+
+  
+
+   
+
+
+   
+
+
+</script>
+</html>
