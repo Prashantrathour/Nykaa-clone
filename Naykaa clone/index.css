@@ -109,17 +109,27 @@ width: 20%;
  
 
 }
+#loginlogout{
+  display:flex;
+  justify-content: space-between;
+}
+#loginlogout button{
+  margin-left: 5px;
+}
 
 @media only screen and (min-width: 30px) and (max-width: 700px){
 .navleft{
   display: none;
+}
+#loginlogout{
+  display:none;
 }
 .nav2catagory{
  display: none;
  
 }
 .nav2{
-  border: 1px solid;
+  
   height: fit-content;
 }
 #searchbox{
