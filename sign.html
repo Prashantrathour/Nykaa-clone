@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="./index.html">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>             
+    <style>
+        #SignUp>form{
+          
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            row-gap: 10px;
+        }
+        #SignUp{
+            width: 100%;
+           align-items: center;
+            display: flex;
+            flex-direction: column;
+    margin-bottom: 50px;
+            align-content: center;
+          
+            
+        }
+        body{
+        height: 100vh;
+  /* background-attachment: scroll; */
+          background-image: url(./Fashion\ Style.png); 
+         
+        
+        }
+        #outer{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(168, 22, 119);
+            height: 100vh;
+        }
+        input{
+            height: 50px;
+            width: 300px;
+            text-align: center;
+            border-color: rgb(236, 16, 170);
+            
+            font-size: 20px;
+          
+        }
+      input:hover{
+            border-color: red;
+          
+        }
+       button{
+        border-color: rgb(236, 17, 145) ;
+        width: 300px;
+        height: 50px;
+        font-size: 15px;
+        color: rgb(168, 22, 119);
+        
+       }
+       p{
+        text-align: center;
+        font-size: 30px;
+        margin: 10px;
+       }
+       
+      #home{
+        font-size: 50px;
+      }
+      a{
+        text-decoration: none;
+        color: purple;
+      }
+    </style>
+</head>
+<body>
+    <div id="outer">
+       
+        <h1>SignUp/Register</h1>
+    <div id="SignUp">
+        
+        <form action="">
+        <input type="text" placeholder="Enter your name" id="name">
+        <input type="number" placeholder="Enter your Mobile number" id="mobile">
+        <input type="email" placeholder ="Enter your Email" id="email">
+        <input type="password"  placeholder="Enter Password" id="password">
+        <input style="color: rgb(236, 17, 145); width: 310px;" type="submit" value="Create Account">
+    </form>
+     <div class="last">
+        <p>or</p>
+    <button>Login With Google or Email/Mobile</button></div>
+</div>
+   
+    </div>
+    
+    
+</body>
+<script>
+    let formdata=document.querySelector("form");
+    let array=JSON.parse(localStorage.getItem("registerdata"))||[]
+    console.log(formdata.name.value)
+    formdata.addEventListener("submit",(el)=>{
+       el.preventDefault(); 
+  
+       object={
+        name:formdata.name.value,
+        mobile:formdata.mobile.value,
+        email:formdata.email.value,
+        password:formdata.password.value,
+       }
+
+        array.push(object)
+        alert("Account Created")
+         localStorage.setItem("registerdata",JSON.stringify(array))
+         window.location.href="./index.html"
+    })
+    ////login
+    let parent=document.getElementById("SignUp")
+    let login=document.querySelector("button")
+    login.addEventListener("click",()=>{
+        h1=document.querySelector("h1").innerText="Login"
+        parent.innerHTML=""
+        let form=document.createElement("form")
+        let input1=document.createElement("input")
+        input1.setAttribute("placeholder","Enter Mobile number")
+        input1.setAttribute("type","number")
+        let input2=document.createElement("input")
+        input2.setAttribute("placeholder","Enter Password")
+        input2.setAttribute("type","password")
+        let input3=document.createElement("input")
+        input3.setAttribute("value","Login")
+        input3.setAttribute("type","submit")
+        let logindata=JSON.parse(localStorage.getItem("login"))||[]
+        input3.addEventListener("click",(el)=>{
+                el.preventDefault();
+                object2={
+        mobile:formdata.mobile.value,
+        password:formdata.password.value,
+       }
+       
+       logindata.push(object2)
+       alert("Login succsessfully")
+       
+       window.location.href="./index.html"
+       localStorage.setItem("login",JSON.stringify(array))
+        })
+        form.append(input1,input2,input3)
+        parent.append(form)
+        
+    })
+    
+</script>
+</html>
