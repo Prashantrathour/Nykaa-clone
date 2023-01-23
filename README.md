@@ -17,3 +17,6 @@ User can able to search any beauty product using search-bar which support three 
 User can able to filter product list according to several parameters.
 
 After clicking on any beauty product , product page added to the cart page then you will go to the address page and fell address and choose the payment mode. you can do it with anyone.
+THIS IS MY UNIQUE LOGO
+![Shipra (2)](https://user-images.githubusercontent.com/112960345/213990830-957f0c5a-933e-4535-a440-edbba6b39945.png)
+
